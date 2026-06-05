@@ -1,10 +1,10 @@
-﻿namespace NET_01._First_Program__Main_version_
+﻿namespace NET_01._First_Program__Main_version_;
+
+internal class Program
 {
-    internal class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        Console.WriteLine("Hello, World!");
+        Console.WriteLine("Hello, Hi!");
     }
 }
