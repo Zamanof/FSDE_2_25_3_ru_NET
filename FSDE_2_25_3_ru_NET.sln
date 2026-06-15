@@ -39,6 +39,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 04. struct", "NET 04. s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 04. class, this, access modifiers", "NET 04. class, this, access modifiers\NET 04. class, this, access modifiers.csproj", "{7725723B-3730-4977-8741-127CA7A71D68}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NET 05", "NET 05", "{27BE82FC-510C-4602-97F9-133201033A44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 05. Partial", "NET 05. Partial\NET 05. Partial.csproj", "{CCC4FD94-8CEC-46A2-99E6-81A48F000C3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -101,6 +105,10 @@ Global
 		{7725723B-3730-4977-8741-127CA7A71D68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7725723B-3730-4977-8741-127CA7A71D68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7725723B-3730-4977-8741-127CA7A71D68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCC4FD94-8CEC-46A2-99E6-81A48F000C3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCC4FD94-8CEC-46A2-99E6-81A48F000C3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCC4FD94-8CEC-46A2-99E6-81A48F000C3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCC4FD94-8CEC-46A2-99E6-81A48F000C3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -120,6 +128,7 @@ Global
 		{33C89463-1A02-409C-866F-7904FDCB0AF4} = {9CB0EFC8-A633-4E49-A5D0-1E730174D6FA}
 		{7FB79EF8-87D7-4C42-AAF7-BC829B5920BF} = {9CB0EFC8-A633-4E49-A5D0-1E730174D6FA}
 		{7725723B-3730-4977-8741-127CA7A71D68} = {9CB0EFC8-A633-4E49-A5D0-1E730174D6FA}
+		{CCC4FD94-8CEC-46A2-99E6-81A48F000C3E} = {27BE82FC-510C-4602-97F9-133201033A44}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B6EE542D-37EA-4B1C-BC21-74040840B8EF}
