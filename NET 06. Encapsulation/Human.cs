@@ -4,10 +4,6 @@ class Human
 {
     // properties
     // auto property
-    public Human()
-    {
-        
-    }
     public string FirstName { get; set; }
     //public string get_FirstName() => "Salam";
     //public void set_FirstName(string value) => value = "45";

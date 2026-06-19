@@ -25,6 +25,7 @@
 #endregion
 
 #region Nullable
-int? numb = null;
-Console.WriteLine(numb+3);
+//int? numb = null;
+//Console.WriteLine(numb+3);
+//Nullable<int> numb1 = null;
 #endregion
