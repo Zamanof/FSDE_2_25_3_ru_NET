@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156
+# Visual Studio Version 18
+VisualStudioVersion = 18.6.11828.311 oobstable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 01. First Program (Main version)", "NET 01. First Program (Main version)\NET 01. First Program (Main version).csproj", "{58B8B98E-3724-4150-9EEA-A7CF0B50F85A}"
 EndProject
@@ -48,6 +48,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 06. Encapsulation", "NET 06. Encapsulation\NET 06. Encapsulation.csproj", "{C1F1FEA9-F15A-461E-B335-7238D89D8F6E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 06. Null conditional, Null coalesing, Nullable", "NET 06. Null conditional, Null coalesing, Nullable\NET 06. Null conditional, Null coalesing, Nullable.csproj", "{ABAA65A5-0B2D-45CC-99E7-DE50FC87912E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 06. tuple, Deconstruct", "NET 05. tuple, Deconstruct\NET 06. tuple, Deconstruct.csproj", "{098F435E-A74E-F99F-C087-0172EDA0A08F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NET 07", "NET 07", "{53D497C1-44BB-43C2-A7E7-9DE6076C82AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 07. Params", "NET 07. Params\NET 07. Params.csproj", "{34C316F8-7A4C-4E42-898B-C2ABC9F98D4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 07. Operator overloading", "NET 07. Operator overloading\NET 07. Operator overloading.csproj", "{268BD363-3A39-4AE1-80D7-621A88273224}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +131,18 @@ Global
 		{ABAA65A5-0B2D-45CC-99E7-DE50FC87912E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABAA65A5-0B2D-45CC-99E7-DE50FC87912E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABAA65A5-0B2D-45CC-99E7-DE50FC87912E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{098F435E-A74E-F99F-C087-0172EDA0A08F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{098F435E-A74E-F99F-C087-0172EDA0A08F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{098F435E-A74E-F99F-C087-0172EDA0A08F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{098F435E-A74E-F99F-C087-0172EDA0A08F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34C316F8-7A4C-4E42-898B-C2ABC9F98D4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34C316F8-7A4C-4E42-898B-C2ABC9F98D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34C316F8-7A4C-4E42-898B-C2ABC9F98D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34C316F8-7A4C-4E42-898B-C2ABC9F98D4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{268BD363-3A39-4AE1-80D7-621A88273224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{268BD363-3A39-4AE1-80D7-621A88273224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{268BD363-3A39-4AE1-80D7-621A88273224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{268BD363-3A39-4AE1-80D7-621A88273224}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -145,6 +165,9 @@ Global
 		{CCC4FD94-8CEC-46A2-99E6-81A48F000C3E} = {27BE82FC-510C-4602-97F9-133201033A44}
 		{C1F1FEA9-F15A-461E-B335-7238D89D8F6E} = {A4CCCA70-C45A-4141-9AB6-E80EF65525C8}
 		{ABAA65A5-0B2D-45CC-99E7-DE50FC87912E} = {A4CCCA70-C45A-4141-9AB6-E80EF65525C8}
+		{098F435E-A74E-F99F-C087-0172EDA0A08F} = {A4CCCA70-C45A-4141-9AB6-E80EF65525C8}
+		{34C316F8-7A4C-4E42-898B-C2ABC9F98D4E} = {53D497C1-44BB-43C2-A7E7-9DE6076C82AF}
+		{268BD363-3A39-4AE1-80D7-621A88273224} = {53D497C1-44BB-43C2-A7E7-9DE6076C82AF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B6EE542D-37EA-4B1C-BC21-74040840B8EF}
