@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 18
-VisualStudioVersion = 18.6.11828.311 oobstable
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 01. First Program (Main version)", "NET 01. First Program (Main version)\NET 01. First Program (Main version).csproj", "{58B8B98E-3724-4150-9EEA-A7CF0B50F85A}"
 EndProject
@@ -56,6 +56,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 07. Params", "NET 07. Params\NET 07. Params.csproj", "{34C316F8-7A4C-4E42-898B-C2ABC9F98D4E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 07. Operator overloading", "NET 07. Operator overloading\NET 07. Operator overloading.csproj", "{268BD363-3A39-4AE1-80D7-621A88273224}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NET 08", "NET 08", "{5FC69870-E96A-49D2-9CD4-C57246097884}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 08. Indexer", "NET 08. Indexer\NET 08. Indexer.csproj", "{2D88BDBC-71E1-4C33-9CEA-0C7DB603EB20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -143,6 +147,10 @@ Global
 		{268BD363-3A39-4AE1-80D7-621A88273224}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{268BD363-3A39-4AE1-80D7-621A88273224}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{268BD363-3A39-4AE1-80D7-621A88273224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D88BDBC-71E1-4C33-9CEA-0C7DB603EB20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D88BDBC-71E1-4C33-9CEA-0C7DB603EB20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D88BDBC-71E1-4C33-9CEA-0C7DB603EB20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D88BDBC-71E1-4C33-9CEA-0C7DB603EB20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -168,6 +176,7 @@ Global
 		{098F435E-A74E-F99F-C087-0172EDA0A08F} = {A4CCCA70-C45A-4141-9AB6-E80EF65525C8}
 		{34C316F8-7A4C-4E42-898B-C2ABC9F98D4E} = {53D497C1-44BB-43C2-A7E7-9DE6076C82AF}
 		{268BD363-3A39-4AE1-80D7-621A88273224} = {53D497C1-44BB-43C2-A7E7-9DE6076C82AF}
+		{2D88BDBC-71E1-4C33-9CEA-0C7DB603EB20} = {5FC69870-E96A-49D2-9CD4-C57246097884}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B6EE542D-37EA-4B1C-BC21-74040840B8EF}
