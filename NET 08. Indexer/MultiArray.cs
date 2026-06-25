@@ -1,6 +1,5 @@
 ﻿// indexer
 // https://learn.microsoft.com/ru-ru/dotnet/csharp/programming-guide/indexers/
-
 class MultiArray
 {
     int[,] ints;
