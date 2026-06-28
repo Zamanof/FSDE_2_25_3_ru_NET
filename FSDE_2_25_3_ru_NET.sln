@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 01. First Program (Main version)", "NET 01. First Program (Main version)\NET 01. First Program (Main version).csproj", "{58B8B98E-3724-4150-9EEA-A7CF0B50F85A}"
 EndProject
@@ -60,6 +60,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NET 08", "NET 08", "{5FC69870-E96A-49D2-9CD4-C57246097884}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 08. Indexer", "NET 08. Indexer\NET 08. Indexer.csproj", "{2D88BDBC-71E1-4C33-9CEA-0C7DB603EB20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 08. Inheritance", "NET 08. Inheritance\NET 08. Inheritance.csproj", "{007CD839-1304-43A7-B64E-A22A47F15CDA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NET 09", "NET 09", "{3F40E9A3-A11B-4626-BD88-D702E46255D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 09. Polymorphism", "NET 09. Polymorphism\NET 09. Polymorphism.csproj", "{31EB76B7-B9D3-4DC6-8662-F48108C7CB19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -151,6 +157,14 @@ Global
 		{2D88BDBC-71E1-4C33-9CEA-0C7DB603EB20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D88BDBC-71E1-4C33-9CEA-0C7DB603EB20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D88BDBC-71E1-4C33-9CEA-0C7DB603EB20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{007CD839-1304-43A7-B64E-A22A47F15CDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{007CD839-1304-43A7-B64E-A22A47F15CDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{007CD839-1304-43A7-B64E-A22A47F15CDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{007CD839-1304-43A7-B64E-A22A47F15CDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31EB76B7-B9D3-4DC6-8662-F48108C7CB19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31EB76B7-B9D3-4DC6-8662-F48108C7CB19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31EB76B7-B9D3-4DC6-8662-F48108C7CB19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31EB76B7-B9D3-4DC6-8662-F48108C7CB19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -177,6 +191,8 @@ Global
 		{34C316F8-7A4C-4E42-898B-C2ABC9F98D4E} = {53D497C1-44BB-43C2-A7E7-9DE6076C82AF}
 		{268BD363-3A39-4AE1-80D7-621A88273224} = {53D497C1-44BB-43C2-A7E7-9DE6076C82AF}
 		{2D88BDBC-71E1-4C33-9CEA-0C7DB603EB20} = {5FC69870-E96A-49D2-9CD4-C57246097884}
+		{007CD839-1304-43A7-B64E-A22A47F15CDA} = {5FC69870-E96A-49D2-9CD4-C57246097884}
+		{31EB76B7-B9D3-4DC6-8662-F48108C7CB19} = {3F40E9A3-A11B-4626-BD88-D702E46255D8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B6EE542D-37EA-4B1C-BC21-74040840B8EF}
