@@ -1,6 +1,7 @@
 ﻿// Operator overloading
 class Point
 {
+    public string Name { get; set; }
     public Point(int x, int y)
     {
         X = x;
@@ -15,7 +16,7 @@ class Point
 
     public override string ToString()
     {
-        return $"Point ({X}, {Y})";
+        return $"{Name} ({X}, {Y})";
     }
 
     // Operator overloading
@@ -71,4 +72,37 @@ class Point
 
     public static bool operator !=(Point left, Point right)
         => !(left == right);
+
+    public static bool operator >(Point left, Point right)
+        => Math.Sqrt(Math.Pow(left.X, 2) + Math.Pow(left.Y, 2)) > Math.Sqrt(Math.Pow(right.X, 2) + Math.Pow(right.Y, 2));
+
+    public static bool operator <(Point left, Point right)
+        => Math.Sqrt(Math.Pow(left.X, 2) + Math.Pow(left.Y, 2)) < Math.Sqrt(Math.Pow(right.X, 2) + Math.Pow(right.Y, 2));
+
+    public static bool operator true(Point point)
+        => point.X != 0 || point.Y != 0;
+
+    public static bool operator false(Point point)
+        => point.X == 0 && point.Y == 0;
+
+    public static Point operator |(Point left, Point right)
+    {
+        if ((left.X != 0 || left.Y != 0) || (right.X != 0 || right.Y != 0))
+        {
+            return right;
+        }
+        return new();
+    }
+
+    public static Point operator &(Point left, Point right)
+    {
+        if ((left.X != 0 || left.Y != 0) && (right.X != 0 || right.Y != 0))
+        {
+            return right;
+        }
+
+        return left;
+    }
+
+
 }
