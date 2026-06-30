@@ -3,6 +3,8 @@
 Point point = new(3, 6);
 Point point1 = new(3, 6);
 
+// 3.656 3.656
+
 Console.WriteLine(point);
 Console.WriteLine(point1);
 
