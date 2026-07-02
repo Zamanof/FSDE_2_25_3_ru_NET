@@ -1,19 +1,49 @@
 ﻿// Standard interfaces
-Auditory auditory = new Auditory();
+// Auditory auditory = new Auditory();
+//
+// foreach (var student in auditory)
+// {
+//     Console.WriteLine(student);
+// }
+//
+// auditory.Sort(new AgeComparer());
+//
+// Console.WriteLine();
+//
+// Console.ForegroundColor = ConsoleColor.Red;
+// foreach (var student in auditory)
+// {
+//     Console.WriteLine(student);
+// }
+// Console.ForegroundColor = ConsoleColor.White;
 
-foreach (var student in auditory)
+
+Student student = new Student
 {
-    Console.WriteLine(student);
-}
+    FirstName = "Bob",
+    LastName = "Boboff",
+    Email = "bob@gmail.com",
+    BirthDate = new DateTime(2001, 5, 25),
+    StudentCard = new StudentCard
+    {
+        Series = "BB",
+        Id = 265498
+    }
+};
 
-auditory.Sort(new AgeComparer());
+#region Shallow Copy
 
-Console.WriteLine();
+// Student student1 = student;
+// student1.FirstName = "Salam";
+// Console.WriteLine(student);
+// Console.WriteLine(student1);
 
-Console.ForegroundColor = ConsoleColor.Red;
-foreach (var student in auditory)
-{
-    Console.WriteLine(student);
-}
-Console.ForegroundColor = ConsoleColor.White;
+#endregion
+
+Student student2 = student.Clone() as Student;
+student2.FirstName = "Salam";
+student2.StudentCard.Series = "AA";
+Console.WriteLine(student);
+Console.WriteLine(student2);
+
 

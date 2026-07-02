@@ -1,5 +1,5 @@
 ﻿// Standard interfaces
-class Student: IComparable
+class Student: IComparable, ICloneable
 {
     public string FirstName { get; set; }
     public string LastName { get; set; }
@@ -28,6 +28,15 @@ class Student: IComparable
             """;
     }
 
-
-
+    public object Clone()
+    {
+        // deep copy
+        Student tmp = this.MemberwiseClone() as Student;
+        tmp.StudentCard = new StudentCard
+        {
+            Id = this.StudentCard.Id,
+            Series = this.StudentCard.Series,
+        };
+        return tmp;
+    }
 }
