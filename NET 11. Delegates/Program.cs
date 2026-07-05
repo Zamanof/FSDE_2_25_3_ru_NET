@@ -58,6 +58,7 @@
 
 
 List<int> ints = [25, 78, -8, 0, -45, -4, 45];
+
 #region Delegates examples
 // Console.WriteLine(Calculator(25, 78, Subtract));
 // var lst = Filter(ints, IsPositive);
@@ -81,7 +82,6 @@ List<int> ints = [25, 78, -8, 0, -45, -4, 45];
 #endregion
 
 #region Sdandard Generic Delegates
-
 #region Action<T>
 // Action<T> - шаблонный делегат котрый может хранит ссылку на методы
 // которые ничего не возвращают (void) и могут принимать до 16-и параметров
@@ -103,18 +103,59 @@ List<int> ints = [25, 78, -8, 0, -45, -4, 45];
 //     Console.WriteLine($"{c}: {a + b}");
 // }
 #endregion
-// Func<T>
-Func<double, double, double> func = Add;
-Func<int, int, int> func1 = DivideInt;
-// Predicate<T>
-Predicate<int> predicate = IsNegative;
 
-// Comparison<T>
-Comparison<int> comparison = DivideInt;
+#region Func<T>
+// Func<T> - шаблонный делегат который может хранить ссылку на методы
+// принимающие до 16-и параметров и возвращают значения
+
+// Func<double, double, double> func = Add;
+// Func<int, int, int> func1 = DivideInt;
+// Func<double, double, double> func <=> delegate double delegate_name(double left, double right);
+
+// Console.WriteLine(CalculatorWithFunc(25, 87, Multiply));
 #endregion
 
+#region Preicate<T>
+// Predicate<T> - шаблонный делегат который может хранить ссылку на методы
+// принимающий один параметр и возвращают bool значение
+// Predicate<int> predicate = IsNegative;
+// Predicate<int> predicate <=> delegate bool FilterDelegate(int value);
+// var lst = Filter(ints, IsNegative);
+// foreach (var item in lst)
+//     Console.Write($"{item} ");
+// Console.WriteLine();
+#endregion
 
-
+#region Comparison<T>
+// Comparison<T> шаблонный делегат который может хранить ссылку на методы
+// принимающие два одинаковых параметра и возвращают int значение
+// Comparison<Human> comparison <=> delegate int comparison(Human left, Human right); 
+// List<Human> humans =
+// [
+//     new(){Name = "Ali", Age = 25},
+//     new(){Name = "Alekper", Age=15},
+//     new(){Name = "Salim", Age=45},
+//     new(){Name = "Vahid", Age=35},
+//     new(){Name = "Zahid", Age=115}
+// ];
+// foreach (Human human in humans)
+// {
+//     Console.WriteLine(human);
+// }
+//
+// // humans.Sort(NameComparison);
+// humans.Sort(delegate(Human h1, Human h2)
+// {
+//     return h1.Age.CompareTo(h2.Age);
+// });
+//
+// Console.WriteLine();
+// foreach (Human human in humans)
+// {
+//     Console.WriteLine(human);
+// }
+#endregion
+#endregion
 
 double Add(double a, double b) => a + b;
 double Subtract(double a, double b) => a - b;
@@ -126,6 +167,11 @@ string Concat(string a, string b) => a + b;
 int DivideInt(int a, int b) => b != 0 ? a / b : throw new DivideByZeroException();
 
 double Calculator(double a, double b, CalculatorDelegate calc)
+{
+    return calc(a, b);
+}
+
+double CalculatorWithFunc(double a, double b, Func<double, double, double> calc)
 {
     return calc(a, b);
 }
@@ -154,6 +200,18 @@ List<int> Filter(List<int> ints, Predicate<int> filter)
     return tmp;
 }
 
+int AgeComparison(Human left, Human right)
+{
+    if (left.Age > right.Age) return 1;
+    else if (left.Age < right.Age) return -1;
+    else return 0;
+}
+
+int NameComparison(Human left, Human right)
+{
+    return left.Name.CompareTo(right.Name);
+}
+
 delegate double CalculatorDelegate(double left, double right); // double methodName(double a, double b)
 delegate bool FilterDelegate(int value); // bool methodName(int value)
 
@@ -166,4 +224,13 @@ enum Arithmetics
     SUBTRACT = '-',
     MULTIPLY = '*',
     DIVIDE  = '/'
-} 
+}
+
+class Human
+{
+    public string? Name { get; set; }
+    public int Age { get; set; }
+    
+    public override string ToString()
+        => $"{Name} -  {Age}";
+}
