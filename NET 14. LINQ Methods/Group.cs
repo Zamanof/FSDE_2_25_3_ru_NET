@@ -1,6 +1,6 @@
 ﻿// LINQ Join
 
-public class Group
+class Group
 {
     public uint Id { get; set; }
     public string Name { get; set; }

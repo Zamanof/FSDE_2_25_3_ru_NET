@@ -1,6 +1,6 @@
 ﻿// LINQ Join
 
-public class Student
+class Student
 {
     public uint Id { get; set; }
     public string FirstName { get; set; }
