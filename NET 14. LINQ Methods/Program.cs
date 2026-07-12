@@ -61,7 +61,7 @@ List<Student> students = new List<Student>
 //else Console.WriteLine("Student not found");
 #endregion
 
-region Single, SingleOrDefault
+#region Single, SingleOrDefault
 // .Single() - возвращает единственный элемент последовательности,
 // который удовлетворяет условию.
 // Если элементов больше одного или нет ни одного, то выбрасывается исключение.
@@ -142,7 +142,7 @@ region Single, SingleOrDefault
 //var studs = students.Skip(3).Take(3).ToList();
 //studs.ForEach(Console.WriteLine);
 
-//var studs2 = students.SkipWhile(s => s.Age < 30).ToList();
+//var studs2 = students.TakeWhile(s => s.Age < 30).ToList();
 //studs2.ForEach(Console.WriteLine);
 #endregion
 
@@ -155,11 +155,21 @@ region Single, SingleOrDefault
 #endregion
 
 #region Join, GroupJoin
-
-//var result = groups.Join(students, 
-//                            g => g.Id, 
+/*
+ var result = from g in groups
+             join s in students on g.Id equals s.GroupId
+             select new
+             {
+                 GroupName = g.Name,
+                 StudentName = $"{s.FirstName} {s.LastName}",
+                 StudentAge = s.Age,
+                 FacultyName = g.Faculty
+             };
+*/
+//var result = groups.Join(students,
+//                            g => g.Id,
 //                            s => s.GroupId,
-//                            (g, s)=> new
+//                            (g, s) => new
 //                            {
 //                                FirstName = s.FirstName,
 //                                LastName = s.LastName,
@@ -180,21 +190,21 @@ region Single, SingleOrDefault
 //        """);
 //}
 
-//var result = groups.GroupJoin(students,
-//                    g => g.Id,
-//                    s => s.GroupId,
-//                    (g, s) => new
-//                    {
-//                        GroupName = g.Name,
-//                        Students = s
-//                    });
+var result = groups.GroupJoin(students,
+                    g => g.Id,
+                    s => s.GroupId,
+                    (g, s) => new
+                    {
+                        GroupName = g.Name,
+                        Students = s
+                    });
 
-//foreach (var item in result)
-//{
-//    Console.WriteLine($"GroupName: {item.GroupName}");
-//    foreach (var student in item.Students)
-//    {
-//        Console.WriteLine($"    FirstName: {student.FirstName}, LastName: {student.LastName}, Age: {student.Age}");
-//    }
-//}
+foreach (var item in result)
+{
+    Console.WriteLine($"GroupName: {item.GroupName}");
+    foreach (var student in item.Students)
+    {
+        Console.WriteLine($"    FirstName: {student.FirstName}, LastName: {student.LastName}, Age: {student.Age}");
+    }
+}
 #endregion
