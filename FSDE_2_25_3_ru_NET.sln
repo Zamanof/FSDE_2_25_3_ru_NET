@@ -117,6 +117,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NET 15", "NET 15", "{C51074
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 15. Exceptions", "NET 15. Exceptions\NET 15. Exceptions.csproj", "{1D2EC6CD-1A0A-4EFB-AC3B-B681C0824D84}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET 15. Garbage Collector", "NET 15. Garbage Collector\NET 15. Garbage Collector.csproj", "{BAC8EA3F-96B3-4A83-BCFD-148415BC36F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -291,6 +293,10 @@ Global
 		{1D2EC6CD-1A0A-4EFB-AC3B-B681C0824D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D2EC6CD-1A0A-4EFB-AC3B-B681C0824D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D2EC6CD-1A0A-4EFB-AC3B-B681C0824D84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAC8EA3F-96B3-4A83-BCFD-148415BC36F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC8EA3F-96B3-4A83-BCFD-148415BC36F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAC8EA3F-96B3-4A83-BCFD-148415BC36F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC8EA3F-96B3-4A83-BCFD-148415BC36F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -338,6 +344,7 @@ Global
 		{D7675A27-4F22-4000-A1E5-D9D1EC21ECD3} = {364D6E59-6A70-4438-AC5C-A75CDCF8EDCE}
 		{E7211D69-EA83-4F27-8E27-2E461954BC95} = {364D6E59-6A70-4438-AC5C-A75CDCF8EDCE}
 		{1D2EC6CD-1A0A-4EFB-AC3B-B681C0824D84} = {C5107425-D538-4A74-AF6A-961E46DC1D92}
+		{BAC8EA3F-96B3-4A83-BCFD-148415BC36F9} = {C5107425-D538-4A74-AF6A-961E46DC1D92}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B6EE542D-37EA-4B1C-BC21-74040840B8EF}
